@@ -1,6 +1,6 @@
 ﻿namespace QuanLyCuaHangBanDia
 {
-	partial class formFulltextSearch
+	partial class formTimDia
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -36,7 +36,6 @@
 			this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.KhuyenMai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.btnTim = new System.Windows.Forms.Button();
 			this.txttim = new System.Windows.Forms.TextBox();
 			this.btnTrove = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
@@ -54,12 +53,12 @@
             this.SoLuong,
             this.DonGia,
             this.KhuyenMai});
-			this.dgv.Location = new System.Drawing.Point(11, 52);
+			this.dgv.Location = new System.Drawing.Point(2, 42);
 			this.dgv.Margin = new System.Windows.Forms.Padding(2);
 			this.dgv.Name = "dgv";
 			this.dgv.RowTemplate.Height = 24;
 			this.dgv.Size = new System.Drawing.Size(667, 193);
-			this.dgv.TabIndex = 24;
+			this.dgv.TabIndex = 19;
 			// 
 			// MaS
 			// 
@@ -107,62 +106,51 @@
 			// 
 			this.KhuyenMai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
 			this.KhuyenMai.DataPropertyName = "KhuyenMai";
-			this.KhuyenMai.HeaderText = "Khuyến Mãi";
+			this.KhuyenMai.HeaderText = "Khuyễn Mãi";
 			this.KhuyenMai.Name = "KhuyenMai";
-			// 
-			// btnTim
-			// 
-			this.btnTim.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnTim.Location = new System.Drawing.Point(546, 17);
-			this.btnTim.Name = "btnTim";
-			this.btnTim.Size = new System.Drawing.Size(86, 23);
-			this.btnTim.TabIndex = 22;
-			this.btnTim.Text = "Tìm";
-			this.btnTim.UseVisualStyleBackColor = true;
 			// 
 			// txttim
 			// 
-			this.txttim.Location = new System.Drawing.Point(249, 17);
+			this.txttim.Location = new System.Drawing.Point(328, 4);
 			this.txttim.Margin = new System.Windows.Forms.Padding(2);
 			this.txttim.Name = "txttim";
-			this.txttim.Size = new System.Drawing.Size(278, 20);
-			this.txttim.TabIndex = 23;
+			this.txttim.Size = new System.Drawing.Size(191, 20);
+			this.txttim.TabIndex = 18;
 			// 
 			// btnTrove
 			// 
-			this.btnTrove.BackColor = System.Drawing.SystemColors.ControlLight;
-			this.btnTrove.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnTrove.BackColor = System.Drawing.Color.Aqua;
+			this.btnTrove.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btnTrove.ForeColor = System.Drawing.Color.Black;
-			this.btnTrove.Location = new System.Drawing.Point(572, 250);
+			this.btnTrove.Location = new System.Drawing.Point(284, 240);
 			this.btnTrove.Name = "btnTrove";
-			this.btnTrove.Size = new System.Drawing.Size(93, 34);
-			this.btnTrove.TabIndex = 26;
+			this.btnTrove.Size = new System.Drawing.Size(94, 40);
+			this.btnTrove.TabIndex = 21;
 			this.btnTrove.Text = "Trở Về";
 			this.btnTrove.UseVisualStyleBackColor = false;
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(22, 14);
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(113, 4);
 			this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(223, 22);
-			this.label1.TabIndex = 25;
-			this.label1.Text = "Nhập Nội Dung Tìm Kiếm";
+			this.label1.Size = new System.Drawing.Size(193, 20);
+			this.label1.TabIndex = 20;
+			this.label1.Text = "Tìm Kiếm Theo Tên Đĩa";
 			// 
-			// formFulltextSearch
+			// formTimDia
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(696, 295);
+			this.ClientSize = new System.Drawing.Size(674, 288);
 			this.Controls.Add(this.dgv);
-			this.Controls.Add(this.btnTim);
 			this.Controls.Add(this.txttim);
 			this.Controls.Add(this.btnTrove);
 			this.Controls.Add(this.label1);
-			this.Name = "formFulltextSearch";
-			this.Text = "Tìm kiếm Thông tin";
+			this.Name = "formTimDia";
+			this.Text = "Tìm kiếm Theo Tên Đĩa";
 			((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
@@ -179,7 +167,6 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
 		private System.Windows.Forms.DataGridViewTextBoxColumn DonGia;
 		private System.Windows.Forms.DataGridViewTextBoxColumn KhuyenMai;
-		private System.Windows.Forms.Button btnTim;
 		private System.Windows.Forms.TextBox txttim;
 		private System.Windows.Forms.Button btnTrove;
 		private System.Windows.Forms.Label label1;

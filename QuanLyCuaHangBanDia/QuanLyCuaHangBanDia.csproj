@@ -53,6 +53,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="formChiTietHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formChiTietHoaDon.Designer.cs">
+      <DependentUpon>formChiTietHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDia.Designer.cs">
+      <DependentUpon>formDia.cs</DependentUpon>
+    </Compile>
     <Compile Include="formFulltextSearch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +77,42 @@
     <Compile Include="formKhachHang.Designer.cs">
       <DependentUpon>formKhachHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="formLapHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLapHoaDon.Designer.cs">
+      <DependentUpon>formLapHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formNhanVien.Designer.cs">
+      <DependentUpon>formNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formNhapDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formNhapDia.Designer.cs">
+      <DependentUpon>formNhapDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formTimDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formTimDia.Designer.cs">
+      <DependentUpon>formTimDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formTimHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formTimHoaDon.Designer.cs">
+      <DependentUpon>formTimHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formXemHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formXemHoaDon.Designer.cs">
+      <DependentUpon>formXemHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,14 +121,44 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLy.Designer.cs">
+      <DependentUpon>QuanLy.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formChiTietHoaDon.resx">
+      <DependentUpon>formChiTietHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDia.resx">
+      <DependentUpon>formDia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formFulltextSearch.resx">
       <DependentUpon>formFulltextSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formKhachHang.resx">
       <DependentUpon>formKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLapHoaDon.resx">
+      <DependentUpon>formLapHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formNhanVien.resx">
+      <DependentUpon>formNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formNhapDia.resx">
+      <DependentUpon>formNhapDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formTimDia.resx">
+      <DependentUpon>formTimDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formTimHoaDon.resx">
+      <DependentUpon>formTimHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formXemHoaDon.resx">
+      <DependentUpon>formXemHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -95,6 +173,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="QuanLy.resx">
+      <DependentUpon>QuanLy.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
