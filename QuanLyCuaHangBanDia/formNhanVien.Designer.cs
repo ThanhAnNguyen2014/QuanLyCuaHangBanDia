@@ -64,6 +64,7 @@
 			this.txtMaNV.Name = "txtMaNV";
 			this.txtMaNV.Size = new System.Drawing.Size(162, 26);
 			this.txtMaNV.TabIndex = 1;
+			this.txtMaNV.Tag = "1";
 			// 
 			// btnReLoad
 			// 
@@ -73,9 +74,11 @@
 			this.btnReLoad.Location = new System.Drawing.Point(16, 352);
 			this.btnReLoad.Name = "btnReLoad";
 			this.btnReLoad.Size = new System.Drawing.Size(86, 43);
-			this.btnReLoad.TabIndex = 47;
+			this.btnReLoad.TabIndex = 5;
+			this.btnReLoad.Tag = "5";
 			this.btnReLoad.Text = "ReLoad";
 			this.btnReLoad.UseVisualStyleBackColor = false;
+			this.btnReLoad.Click += new System.EventHandler(this.NhanVien_Load);
 			// 
 			// btnThoat
 			// 
@@ -85,9 +88,11 @@
 			this.btnThoat.Location = new System.Drawing.Point(686, 352);
 			this.btnThoat.Name = "btnThoat";
 			this.btnThoat.Size = new System.Drawing.Size(117, 43);
-			this.btnThoat.TabIndex = 46;
+			this.btnThoat.TabIndex = 11;
+			this.btnThoat.Tag = "11";
 			this.btnThoat.Text = "Trở Về";
 			this.btnThoat.UseVisualStyleBackColor = false;
+			this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
 			// 
 			// dgvKHACHHANG
 			// 
@@ -167,7 +172,8 @@
 			this.txtDienthoai.Location = new System.Drawing.Point(545, 53);
 			this.txtDienthoai.Name = "txtDienthoai";
 			this.txtDienthoai.Size = new System.Drawing.Size(203, 26);
-			this.txtDienthoai.TabIndex = 10;
+			this.txtDienthoai.TabIndex = 4;
+			this.txtDienthoai.Tag = "4";
 			// 
 			// txtTen
 			// 
@@ -176,7 +182,8 @@
 			this.txtTen.Location = new System.Drawing.Point(545, 19);
 			this.txtTen.Name = "txtTen";
 			this.txtTen.Size = new System.Drawing.Size(203, 26);
-			this.txtTen.TabIndex = 9;
+			this.txtTen.TabIndex = 2;
+			this.txtTen.Tag = "2";
 			// 
 			// label5
 			// 
@@ -197,9 +204,11 @@
 			this.btnXoa.Location = new System.Drawing.Point(561, 352);
 			this.btnXoa.Name = "btnXoa";
 			this.btnXoa.Size = new System.Drawing.Size(119, 43);
-			this.btnXoa.TabIndex = 48;
+			this.btnXoa.TabIndex = 10;
+			this.btnXoa.Tag = "10";
 			this.btnXoa.Text = "Xóa";
 			this.btnXoa.UseVisualStyleBackColor = false;
+			this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
 			// 
 			// labTen
 			// 
@@ -262,7 +271,8 @@
 			this.txtDiaChi.Location = new System.Drawing.Point(139, 53);
 			this.txtDiaChi.Name = "txtDiaChi";
 			this.txtDiaChi.Size = new System.Drawing.Size(284, 26);
-			this.txtDiaChi.TabIndex = 5;
+			this.txtDiaChi.TabIndex = 3;
+			this.txtDiaChi.Tag = "3";
 			// 
 			// btnHuy
 			// 
@@ -272,9 +282,11 @@
 			this.btnHuy.Location = new System.Drawing.Point(429, 352);
 			this.btnHuy.Name = "btnHuy";
 			this.btnHuy.Size = new System.Drawing.Size(126, 43);
-			this.btnHuy.TabIndex = 51;
+			this.btnHuy.TabIndex = 9;
+			this.btnHuy.Tag = "9";
 			this.btnHuy.Text = "Hủy";
 			this.btnHuy.UseVisualStyleBackColor = false;
+			this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
 			// 
 			// btnLuu
 			// 
@@ -284,9 +296,11 @@
 			this.btnLuu.Location = new System.Drawing.Point(312, 352);
 			this.btnLuu.Name = "btnLuu";
 			this.btnLuu.Size = new System.Drawing.Size(111, 43);
-			this.btnLuu.TabIndex = 52;
+			this.btnLuu.TabIndex = 8;
+			this.btnLuu.Tag = "8";
 			this.btnLuu.Text = "Lưu";
 			this.btnLuu.UseVisualStyleBackColor = false;
+			this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
 			// 
 			// btnThem
 			// 
@@ -296,9 +310,11 @@
 			this.btnThem.Location = new System.Drawing.Point(108, 352);
 			this.btnThem.Name = "btnThem";
 			this.btnThem.Size = new System.Drawing.Size(96, 43);
-			this.btnThem.TabIndex = 50;
+			this.btnThem.TabIndex = 6;
+			this.btnThem.Tag = "6";
 			this.btnThem.Text = "Thêm";
 			this.btnThem.UseVisualStyleBackColor = false;
+			this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
 			// 
 			// btnSua
 			// 
@@ -308,9 +324,11 @@
 			this.btnSua.Location = new System.Drawing.Point(210, 352);
 			this.btnSua.Name = "btnSua";
 			this.btnSua.Size = new System.Drawing.Size(96, 43);
-			this.btnSua.TabIndex = 49;
+			this.btnSua.TabIndex = 7;
+			this.btnSua.Tag = "7";
 			this.btnSua.Text = "Sửa";
 			this.btnSua.UseVisualStyleBackColor = false;
+			this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
 			// 
 			// formNhanVien
 			// 
@@ -327,6 +345,7 @@
 			this.Controls.Add(this.btnThem);
 			this.Controls.Add(this.btnSua);
 			this.Name = "formNhanVien";
+			this.Tag = "0";
 			this.Text = "Thông tin Nhân Viên";
 			((System.ComponentModel.ISupportInitialize)(this.dgvKHACHHANG)).EndInit();
 			this.panel.ResumeLayout(false);
