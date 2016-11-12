@@ -36,6 +36,7 @@
 			this.label7 = new System.Windows.Forms.Label();
 			this.label8 = new System.Windows.Forms.Label();
 			this.panel = new System.Windows.Forms.Panel();
+			this.label1 = new System.Windows.Forms.Label();
 			this.txtMaKH = new System.Windows.Forms.TextBox();
 			this.btnOK = new System.Windows.Forms.Button();
 			this.btnTrove = new System.Windows.Forms.Button();
@@ -49,7 +50,6 @@
 			this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.btnReload = new System.Windows.Forms.Button();
 			this.dgvKHACHHANG = new System.Windows.Forms.DataGridView();
-			this.label1 = new System.Windows.Forms.Label();
 			this.panel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvKHACHHANG)).BeginInit();
 			this.SuspendLayout();
@@ -59,7 +59,7 @@
 			this.txtTenKH.Location = new System.Drawing.Point(160, 90);
 			this.txtTenKH.Name = "txtTenKH";
 			this.txtTenKH.Size = new System.Drawing.Size(202, 20);
-			this.txtTenKH.TabIndex = 17;
+			this.txtTenKH.TabIndex = 2;
 			// 
 			// label3
 			// 
@@ -67,16 +67,16 @@
 			this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label3.Location = new System.Drawing.Point(88, 90);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(65, 19);
+			this.label3.Size = new System.Drawing.Size(68, 19);
 			this.label3.TabIndex = 16;
-			this.label3.Text = "Địa Chỉ:";
+			this.label3.Text = "Tên KH:";
 			// 
 			// txtSoDT
 			// 
 			this.txtSoDT.Location = new System.Drawing.Point(472, 91);
 			this.txtSoDT.Name = "txtSoDT";
 			this.txtSoDT.Size = new System.Drawing.Size(202, 20);
-			this.txtSoDT.TabIndex = 15;
+			this.txtSoDT.TabIndex = 4;
 			// 
 			// label6
 			// 
@@ -93,7 +93,7 @@
 			this.txtDiaChi.Location = new System.Drawing.Point(472, 42);
 			this.txtDiaChi.Name = "txtDiaChi";
 			this.txtDiaChi.Size = new System.Drawing.Size(202, 20);
-			this.txtDiaChi.TabIndex = 13;
+			this.txtDiaChi.TabIndex = 3;
 			// 
 			// label7
 			// 
@@ -128,17 +128,29 @@
 			this.panel.Controls.Add(this.txtMaKH);
 			this.panel.Controls.Add(this.label8);
 			this.panel.Enabled = false;
-			this.panel.Location = new System.Drawing.Point(1, 1);
+			this.panel.Location = new System.Drawing.Point(1, -2);
 			this.panel.Name = "panel";
-			this.panel.Size = new System.Drawing.Size(787, 149);
+			this.panel.Size = new System.Drawing.Size(787, 124);
 			this.panel.TabIndex = 45;
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.BackColor = System.Drawing.Color.Transparent;
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.ForeColor = System.Drawing.Color.Blue;
+			this.label1.Location = new System.Drawing.Point(11, 8);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(162, 20);
+			this.label1.TabIndex = 18;
+			this.label1.Text = "Thông tin khách hàng";
 			// 
 			// txtMaKH
 			// 
 			this.txtMaKH.Location = new System.Drawing.Point(160, 41);
 			this.txtMaKH.Name = "txtMaKH";
 			this.txtMaKH.Size = new System.Drawing.Size(202, 20);
-			this.txtMaKH.TabIndex = 11;
+			this.txtMaKH.TabIndex = 1;
 			// 
 			// btnOK
 			// 
@@ -147,9 +159,10 @@
 			this.btnOK.Location = new System.Drawing.Point(622, 273);
 			this.btnOK.Name = "btnOK";
 			this.btnOK.Size = new System.Drawing.Size(75, 35);
-			this.btnOK.TabIndex = 44;
+			this.btnOK.TabIndex = 8;
 			this.btnOK.Text = "OK";
 			this.btnOK.UseVisualStyleBackColor = false;
+			this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
 			// 
 			// btnTrove
 			// 
@@ -159,9 +172,10 @@
 			this.btnTrove.Location = new System.Drawing.Point(703, 314);
 			this.btnTrove.Name = "btnTrove";
 			this.btnTrove.Size = new System.Drawing.Size(75, 35);
-			this.btnTrove.TabIndex = 43;
+			this.btnTrove.TabIndex = 11;
 			this.btnTrove.Text = "Trở Về";
 			this.btnTrove.UseVisualStyleBackColor = false;
+			this.btnTrove.Click += new System.EventHandler(this.btnTrove_Click);
 			// 
 			// btnCancel
 			// 
@@ -170,9 +184,10 @@
 			this.btnCancel.Location = new System.Drawing.Point(622, 314);
 			this.btnCancel.Name = "btnCancel";
 			this.btnCancel.Size = new System.Drawing.Size(75, 35);
-			this.btnCancel.TabIndex = 41;
+			this.btnCancel.TabIndex = 10;
 			this.btnCancel.Text = "Cancel";
 			this.btnCancel.UseVisualStyleBackColor = false;
+			this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
 			// 
 			// btnXoa
 			// 
@@ -181,9 +196,10 @@
 			this.btnXoa.Location = new System.Drawing.Point(622, 224);
 			this.btnXoa.Name = "btnXoa";
 			this.btnXoa.Size = new System.Drawing.Size(75, 35);
-			this.btnXoa.TabIndex = 40;
+			this.btnXoa.TabIndex = 6;
 			this.btnXoa.Text = "Xóa";
 			this.btnXoa.UseVisualStyleBackColor = false;
+			this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
 			// 
 			// btnSua
 			// 
@@ -192,9 +208,10 @@
 			this.btnSua.Location = new System.Drawing.Point(703, 224);
 			this.btnSua.Name = "btnSua";
 			this.btnSua.Size = new System.Drawing.Size(75, 35);
-			this.btnSua.TabIndex = 39;
+			this.btnSua.TabIndex = 7;
 			this.btnSua.Text = "Sửa";
 			this.btnSua.UseVisualStyleBackColor = false;
+			this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
 			// 
 			// btnThem
 			// 
@@ -203,9 +220,10 @@
 			this.btnThem.Location = new System.Drawing.Point(661, 174);
 			this.btnThem.Name = "btnThem";
 			this.btnThem.Size = new System.Drawing.Size(75, 35);
-			this.btnThem.TabIndex = 38;
+			this.btnThem.TabIndex = 5;
 			this.btnThem.Text = "Thêm";
 			this.btnThem.UseVisualStyleBackColor = false;
+			this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
 			// 
 			// SDT
 			// 
@@ -242,9 +260,10 @@
 			this.btnReload.Location = new System.Drawing.Point(703, 273);
 			this.btnReload.Name = "btnReload";
 			this.btnReload.Size = new System.Drawing.Size(75, 35);
-			this.btnReload.TabIndex = 42;
+			this.btnReload.TabIndex = 9;
 			this.btnReload.Text = "Reload";
 			this.btnReload.UseVisualStyleBackColor = false;
+			this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
 			// 
 			// dgvKHACHHANG
 			// 
@@ -254,28 +273,16 @@
             this.TenKH,
             this.Diachi,
             this.SDT});
-			this.dgvKHACHHANG.Location = new System.Drawing.Point(1, 150);
+			this.dgvKHACHHANG.Location = new System.Drawing.Point(1, 128);
 			this.dgvKHACHHANG.Name = "dgvKHACHHANG";
-			this.dgvKHACHHANG.Size = new System.Drawing.Size(603, 232);
+			this.dgvKHACHHANG.Size = new System.Drawing.Size(603, 221);
 			this.dgvKHACHHANG.TabIndex = 37;
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.BackColor = System.Drawing.Color.Transparent;
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.Color.Blue;
-			this.label1.Location = new System.Drawing.Point(11, 8);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(162, 20);
-			this.label1.TabIndex = 18;
-			this.label1.Text = "Thông tin khách hàng";
 			// 
 			// formKhachHang
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(789, 386);
+			this.ClientSize = new System.Drawing.Size(789, 366);
 			this.Controls.Add(this.panel);
 			this.Controls.Add(this.btnOK);
 			this.Controls.Add(this.btnTrove);
