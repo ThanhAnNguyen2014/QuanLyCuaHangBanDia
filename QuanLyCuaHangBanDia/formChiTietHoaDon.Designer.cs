@@ -29,10 +29,6 @@
 		private void InitializeComponent()
 		{
 			this.btnTrove = new System.Windows.Forms.Button();
-			this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.MaS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.MaHD1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.label3 = new System.Windows.Forms.Label();
 			this.dgvcthd = new System.Windows.Forms.DataGridView();
 			this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +47,10 @@
 			this.btnOK = new System.Windows.Forms.Button();
 			this.dgvhoadon = new System.Windows.Forms.DataGridView();
 			this.label2 = new System.Windows.Forms.Label();
+			this.MaHD1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.MaD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.dgvcthd)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvkhachhang)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvhoadon)).BeginInit();
@@ -64,37 +64,9 @@
 			this.btnTrove.Location = new System.Drawing.Point(755, 308);
 			this.btnTrove.Name = "btnTrove";
 			this.btnTrove.Size = new System.Drawing.Size(106, 42);
-			this.btnTrove.TabIndex = 59;
+			this.btnTrove.TabIndex = 4;
 			this.btnTrove.Text = "Trở Về";
 			this.btnTrove.UseVisualStyleBackColor = false;
-			// 
-			// ThanhTien
-			// 
-			this.ThanhTien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.ThanhTien.DataPropertyName = "ThanhTien";
-			this.ThanhTien.HeaderText = "Thành Tiền";
-			this.ThanhTien.Name = "ThanhTien";
-			// 
-			// SoLuong
-			// 
-			this.SoLuong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.SoLuong.DataPropertyName = "SoLuong";
-			this.SoLuong.HeaderText = "Số Lượng";
-			this.SoLuong.Name = "SoLuong";
-			this.SoLuong.ReadOnly = true;
-			// 
-			// MaS
-			// 
-			this.MaS.DataPropertyName = "MaS";
-			this.MaS.HeaderText = "Mã Sách";
-			this.MaS.Name = "MaS";
-			// 
-			// MaHD1
-			// 
-			this.MaHD1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.MaHD1.DataPropertyName = "MaHD";
-			this.MaHD1.HeaderText = "Mã Hóa Đơn";
-			this.MaHD1.Name = "MaHD1";
 			// 
 			// label3
 			// 
@@ -113,7 +85,7 @@
 			this.dgvcthd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgvcthd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaHD1,
-            this.MaS,
+            this.MaD,
             this.SoLuong,
             this.ThanhTien});
 			this.dgvcthd.Location = new System.Drawing.Point(242, 255);
@@ -192,12 +164,13 @@
 			// 
 			// xemloainao
 			// 
+			this.xemloainao.DisplayMember = "MaHD";
 			this.xemloainao.FormattingEnabled = true;
 			this.xemloainao.Location = new System.Drawing.Point(308, 14);
 			this.xemloainao.Margin = new System.Windows.Forms.Padding(2);
 			this.xemloainao.Name = "xemloainao";
 			this.xemloainao.Size = new System.Drawing.Size(118, 21);
-			this.xemloainao.TabIndex = 50;
+			this.xemloainao.TabIndex = 1;
 			this.xemloainao.ValueMember = "MaHD";
 			// 
 			// TongTien
@@ -235,7 +208,7 @@
 			this.btnShowAll.Location = new System.Drawing.Point(565, 9);
 			this.btnShowAll.Name = "btnShowAll";
 			this.btnShowAll.Size = new System.Drawing.Size(118, 38);
-			this.btnShowAll.TabIndex = 53;
+			this.btnShowAll.TabIndex = 3;
 			this.btnShowAll.Text = "&Show All";
 			this.btnShowAll.UseVisualStyleBackColor = false;
 			// 
@@ -246,7 +219,7 @@
 			this.btnOK.Location = new System.Drawing.Point(475, 9);
 			this.btnOK.Name = "btnOK";
 			this.btnOK.Size = new System.Drawing.Size(84, 38);
-			this.btnOK.TabIndex = 52;
+			this.btnOK.TabIndex = 2;
 			this.btnOK.Text = "&OK";
 			this.btnOK.UseVisualStyleBackColor = false;
 			// 
@@ -274,6 +247,34 @@
 			this.label2.Size = new System.Drawing.Size(76, 19);
 			this.label2.TabIndex = 49;
 			this.label2.Text = "Hóa Đơn:";
+			// 
+			// MaHD1
+			// 
+			this.MaHD1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.MaHD1.DataPropertyName = "MaHD";
+			this.MaHD1.HeaderText = "Mã Hóa Đơn";
+			this.MaHD1.Name = "MaHD1";
+			// 
+			// MaD
+			// 
+			this.MaD.DataPropertyName = "MaD";
+			this.MaD.HeaderText = "Mã Đĩa";
+			this.MaD.Name = "MaD";
+			// 
+			// SoLuong
+			// 
+			this.SoLuong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.SoLuong.DataPropertyName = "SoLuong";
+			this.SoLuong.HeaderText = "Số Lượng";
+			this.SoLuong.Name = "SoLuong";
+			this.SoLuong.ReadOnly = true;
+			// 
+			// ThanhTien
+			// 
+			this.ThanhTien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.ThanhTien.DataPropertyName = "ThanhTien";
+			this.ThanhTien.HeaderText = "Thành Tiền";
+			this.ThanhTien.Name = "ThanhTien";
 			// 
 			// formChiTietHoaDon
 			// 
@@ -304,10 +305,6 @@
 		#endregion
 
 		private System.Windows.Forms.Button btnTrove;
-		private System.Windows.Forms.DataGridViewTextBoxColumn ThanhTien;
-		private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
-		private System.Windows.Forms.DataGridViewTextBoxColumn MaS;
-		private System.Windows.Forms.DataGridViewTextBoxColumn MaHD1;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.DataGridView dgvcthd;
 		private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
@@ -326,5 +323,9 @@
 		private System.Windows.Forms.Button btnOK;
 		private System.Windows.Forms.DataGridView dgvhoadon;
 		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.DataGridViewTextBoxColumn MaHD1;
+		private System.Windows.Forms.DataGridViewTextBoxColumn MaD;
+		private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ThanhTien;
 	}
 }

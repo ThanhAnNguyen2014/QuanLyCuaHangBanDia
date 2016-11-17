@@ -50,6 +50,11 @@
 			this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.btnktttkh = new System.Windows.Forms.Button();
 			this.dgvdia = new System.Windows.Forms.DataGridView();
+			this.MaHD1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.MaD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.MaD1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+			this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.label5 = new System.Windows.Forms.Label();
 			this.dgvHoaDon = new System.Windows.Forms.DataGridView();
 			this.MaHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,11 +67,6 @@
 			this.button3 = new System.Windows.Forms.Button();
 			this.btnxemchitiet = new System.Windows.Forms.Button();
 			this.label6 = new System.Windows.Forms.Label();
-			this.MaHD1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.MaD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.MaD1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-			this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.panel2.SuspendLayout();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvKHACHHANG)).BeginInit();
@@ -82,7 +82,7 @@
 			this.btnTaomoi.Location = new System.Drawing.Point(702, 267);
 			this.btnTaomoi.Name = "btnTaomoi";
 			this.btnTaomoi.Size = new System.Drawing.Size(75, 34);
-			this.btnTaomoi.TabIndex = 63;
+			this.btnTaomoi.TabIndex = 8;
 			this.btnTaomoi.Text = "Tạo Mới";
 			this.btnTaomoi.UseVisualStyleBackColor = false;
 			this.btnTaomoi.Click += new System.EventHandler(this.btnTaomoi_Click);
@@ -114,7 +114,7 @@
 			this.cbkh.Margin = new System.Windows.Forms.Padding(2);
 			this.cbkh.Name = "cbkh";
 			this.cbkh.Size = new System.Drawing.Size(92, 21);
-			this.cbkh.TabIndex = 29;
+			this.cbkh.TabIndex = 2;
 			this.cbkh.ValueMember = "MaKH";
 			// 
 			// label2
@@ -154,7 +154,7 @@
 			this.txtsoluong.Location = new System.Drawing.Point(364, 24);
 			this.txtsoluong.Name = "txtsoluong";
 			this.txtsoluong.Size = new System.Drawing.Size(108, 20);
-			this.txtsoluong.TabIndex = 34;
+			this.txtsoluong.TabIndex = 7;
 			// 
 			// label4
 			// 
@@ -174,7 +174,7 @@
 			this.cbmad.Margin = new System.Windows.Forms.Padding(2);
 			this.cbmad.Name = "cbmad";
 			this.cbmad.Size = new System.Drawing.Size(161, 21);
-			this.cbmad.TabIndex = 32;
+			this.cbmad.TabIndex = 6;
 			this.cbmad.ValueMember = "MaD";
 			// 
 			// label3
@@ -195,7 +195,7 @@
 			this.btnTrove.Location = new System.Drawing.Point(702, 406);
 			this.btnTrove.Name = "btnTrove";
 			this.btnTrove.Size = new System.Drawing.Size(75, 35);
-			this.btnTrove.TabIndex = 60;
+			this.btnTrove.TabIndex = 13;
 			this.btnTrove.Text = "Trở Về";
 			this.btnTrove.UseVisualStyleBackColor = false;
 			this.btnTrove.Click += new System.EventHandler(this.btnTrove_Click);
@@ -207,7 +207,7 @@
 			this.btcapnhat.Margin = new System.Windows.Forms.Padding(2);
 			this.btcapnhat.Name = "btcapnhat";
 			this.btcapnhat.Size = new System.Drawing.Size(136, 28);
-			this.btcapnhat.TabIndex = 62;
+			this.btcapnhat.TabIndex = 12;
 			this.btcapnhat.Text = "Cập Nhật";
 			this.btcapnhat.UseVisualStyleBackColor = true;
 			this.btcapnhat.Click += new System.EventHandler(this.btcapnhat_Click);
@@ -220,7 +220,7 @@
 			this.button2.Location = new System.Drawing.Point(702, 341);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(75, 32);
-			this.button2.TabIndex = 61;
+			this.button2.TabIndex = 9;
 			this.button2.Text = "Hủy";
 			this.button2.UseVisualStyleBackColor = false;
 			this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -233,7 +233,7 @@
 			this.cbmahd.Margin = new System.Windows.Forms.Padding(2);
 			this.cbmahd.Name = "cbmahd";
 			this.cbmahd.Size = new System.Drawing.Size(92, 21);
-			this.cbmahd.TabIndex = 45;
+			this.cbmahd.TabIndex = 1;
 			this.cbmahd.ValueMember = "MaHD";
 			// 
 			// btnLuu1
@@ -243,7 +243,7 @@
 			this.btnLuu1.Margin = new System.Windows.Forms.Padding(2);
 			this.btnLuu1.Name = "btnLuu1";
 			this.btnLuu1.Size = new System.Drawing.Size(136, 28);
-			this.btnLuu1.TabIndex = 64;
+			this.btnLuu1.TabIndex = 4;
 			this.btnLuu1.Text = "Lưu";
 			this.btnLuu1.UseVisualStyleBackColor = true;
 			this.btnLuu1.Click += new System.EventHandler(this.btnLuu1_Click);
@@ -296,7 +296,7 @@
 			this.btnktttkh.Margin = new System.Windows.Forms.Padding(2);
 			this.btnktttkh.Name = "btnktttkh";
 			this.btnktttkh.Size = new System.Drawing.Size(136, 28);
-			this.btnktttkh.TabIndex = 48;
+			this.btnktttkh.TabIndex = 5;
 			this.btnktttkh.Text = "Kiểm Tra Thông Tin";
 			this.btnktttkh.UseVisualStyleBackColor = true;
 			this.btnktttkh.Click += new System.EventHandler(this.btnktttkh_Click);
@@ -316,6 +316,43 @@
 			this.dgvdia.RowTemplate.Height = 24;
 			this.dgvdia.Size = new System.Drawing.Size(680, 91);
 			this.dgvdia.TabIndex = 49;
+			// 
+			// MaHD1
+			// 
+			this.MaHD1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.MaHD1.DataPropertyName = "MaHD";
+			this.MaHD1.HeaderText = "Mã Hóa Đơn";
+			this.MaHD1.Name = "MaHD1";
+			// 
+			// MaD
+			// 
+			this.MaD.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.MaD.DataPropertyName = "MaD";
+			this.MaD.HeaderText = "Mã Đĩa";
+			this.MaD.Name = "MaD";
+			// 
+			// MaD1
+			// 
+			this.MaD1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.MaD1.DataPropertyName = "MaD";
+			this.MaD1.HeaderText = "Tên Đĩa";
+			this.MaD1.Name = "MaD1";
+			this.MaD1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+			this.MaD1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+			// 
+			// SoLuong
+			// 
+			this.SoLuong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.SoLuong.DataPropertyName = "SoLuong";
+			this.SoLuong.HeaderText = "Số Lượng";
+			this.SoLuong.Name = "SoLuong";
+			// 
+			// ThanhTien
+			// 
+			this.ThanhTien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.ThanhTien.DataPropertyName = "ThanhTien";
+			this.ThanhTien.HeaderText = "Thành Tiền";
+			this.ThanhTien.Name = "ThanhTien";
 			// 
 			// label5
 			// 
@@ -384,7 +421,7 @@
 			this.button1.Margin = new System.Windows.Forms.Padding(2);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(136, 28);
-			this.button1.TabIndex = 50;
+			this.button1.TabIndex = 10;
 			this.button1.Text = "Lưu";
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -407,7 +444,7 @@
 			this.button3.Margin = new System.Windows.Forms.Padding(2);
 			this.button3.Name = "button3";
 			this.button3.Size = new System.Drawing.Size(136, 28);
-			this.button3.TabIndex = 53;
+			this.button3.TabIndex = 3;
 			this.button3.Text = "Kiểm Tra Hóa Đơn";
 			this.button3.UseVisualStyleBackColor = true;
 			this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -419,7 +456,7 @@
 			this.btnxemchitiet.Margin = new System.Windows.Forms.Padding(2);
 			this.btnxemchitiet.Name = "btnxemchitiet";
 			this.btnxemchitiet.Size = new System.Drawing.Size(136, 28);
-			this.btnxemchitiet.TabIndex = 57;
+			this.btnxemchitiet.TabIndex = 11;
 			this.btnxemchitiet.Text = "Xem Chi Tiết";
 			this.btnxemchitiet.UseVisualStyleBackColor = true;
 			this.btnxemchitiet.Click += new System.EventHandler(this.btnxemchitiet_Click);
@@ -434,43 +471,6 @@
 			this.label6.TabIndex = 55;
 			this.label6.Text = "Thông Tin Hóa Đơn:";
 			this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
-			// MaHD1
-			// 
-			this.MaHD1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.MaHD1.DataPropertyName = "MaHD";
-			this.MaHD1.HeaderText = "Mã Hóa Đơn";
-			this.MaHD1.Name = "MaHD1";
-			// 
-			// MaD
-			// 
-			this.MaD.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.MaD.DataPropertyName = "MaD";
-			this.MaD.HeaderText = "Mã Đĩa";
-			this.MaD.Name = "MaD";
-			// 
-			// MaD1
-			// 
-			this.MaD1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.MaD1.DataPropertyName = "MaD";
-			this.MaD1.HeaderText = "Tên Đĩa";
-			this.MaD1.Name = "MaD1";
-			this.MaD1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-			this.MaD1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-			// 
-			// SoLuong
-			// 
-			this.SoLuong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.SoLuong.DataPropertyName = "SoLuong";
-			this.SoLuong.HeaderText = "Số Lượng";
-			this.SoLuong.Name = "SoLuong";
-			// 
-			// ThanhTien
-			// 
-			this.ThanhTien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.ThanhTien.DataPropertyName = "ThanhTien";
-			this.ThanhTien.HeaderText = "Thành Tiền";
-			this.ThanhTien.Name = "ThanhTien";
 			// 
 			// formLapHoaDon
 			// 
