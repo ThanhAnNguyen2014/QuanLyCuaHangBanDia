@@ -53,9 +53,10 @@
 			this.btnTrove.Location = new System.Drawing.Point(543, 198);
 			this.btnTrove.Name = "btnTrove";
 			this.btnTrove.Size = new System.Drawing.Size(105, 43);
-			this.btnTrove.TabIndex = 59;
+			this.btnTrove.TabIndex = 5;
 			this.btnTrove.Text = "Trở Về";
 			this.btnTrove.UseVisualStyleBackColor = false;
+			this.btnTrove.Click += new System.EventHandler(this.btnTrove_Click);
 			// 
 			// label1
 			// 
@@ -104,9 +105,10 @@
 			this.bttinh.Location = new System.Drawing.Point(513, 93);
 			this.bttinh.Name = "bttinh";
 			this.bttinh.Size = new System.Drawing.Size(170, 30);
-			this.bttinh.TabIndex = 55;
+			this.bttinh.TabIndex = 4;
 			this.bttinh.Text = "Tổng Tiền";
 			this.bttinh.UseVisualStyleBackColor = false;
+			this.bttinh.Click += new System.EventHandler(this.bttinh_Click);
 			// 
 			// btnShowAll
 			// 
@@ -115,9 +117,10 @@
 			this.btnShowAll.Location = new System.Drawing.Point(565, 17);
 			this.btnShowAll.Name = "btnShowAll";
 			this.btnShowAll.Size = new System.Drawing.Size(118, 38);
-			this.btnShowAll.TabIndex = 54;
+			this.btnShowAll.TabIndex = 3;
 			this.btnShowAll.Text = "&Show All";
 			this.btnShowAll.UseVisualStyleBackColor = false;
+			this.btnShowAll.Click += new System.EventHandler(this.btnShowAll_Click);
 			// 
 			// btnOK
 			// 
@@ -126,9 +129,10 @@
 			this.btnOK.Location = new System.Drawing.Point(475, 17);
 			this.btnOK.Name = "btnOK";
 			this.btnOK.Size = new System.Drawing.Size(84, 38);
-			this.btnOK.TabIndex = 53;
+			this.btnOK.TabIndex = 2;
 			this.btnOK.Text = "&OK";
 			this.btnOK.UseVisualStyleBackColor = false;
+			this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
 			// 
 			// tien
 			// 
@@ -172,18 +176,19 @@
 			this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label2.Location = new System.Drawing.Point(198, 17);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(75, 19);
+			this.label2.Size = new System.Drawing.Size(56, 19);
 			this.label2.TabIndex = 50;
-			this.label2.Text = "Hóa Đơn:";
+			this.label2.Text = "Tháng:";
 			// 
 			// xemloainao
 			// 
+			this.xemloainao.DisplayMember = "ma";
 			this.xemloainao.FormattingEnabled = true;
 			this.xemloainao.Location = new System.Drawing.Point(293, 17);
 			this.xemloainao.Margin = new System.Windows.Forms.Padding(2);
 			this.xemloainao.Name = "xemloainao";
 			this.xemloainao.Size = new System.Drawing.Size(110, 21);
-			this.xemloainao.TabIndex = 51;
+			this.xemloainao.TabIndex = 1;
 			this.xemloainao.ValueMember = "ma";
 			// 
 			// formXemHoaDon
