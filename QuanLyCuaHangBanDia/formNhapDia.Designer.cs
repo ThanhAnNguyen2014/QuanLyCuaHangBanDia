@@ -49,13 +49,13 @@
 			this.btnHuy = new System.Windows.Forms.Button();
 			this.btnThem = new System.Windows.Forms.Button();
 			this.dgvKHACHHANG = new System.Windows.Forms.DataGridView();
-			this.btnXoa = new System.Windows.Forms.Button();
 			this.MaDia = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.TuaDia = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Tennsx = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Dongia = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Khuyenmai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.btnXoa = new System.Windows.Forms.Button();
 			this.panel.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvKHACHHANG)).BeginInit();
 			this.SuspendLayout();
@@ -288,18 +288,6 @@
 			this.dgvKHACHHANG.Size = new System.Drawing.Size(833, 253);
 			this.dgvKHACHHANG.TabIndex = 38;
 			// 
-			// btnXoa
-			// 
-			this.btnXoa.BackColor = System.Drawing.SystemColors.Control;
-			this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnXoa.Location = new System.Drawing.Point(199, 403);
-			this.btnXoa.Name = "btnXoa";
-			this.btnXoa.Size = new System.Drawing.Size(73, 41);
-			this.btnXoa.TabIndex = 9;
-			this.btnXoa.Text = "Xóa";
-			this.btnXoa.UseVisualStyleBackColor = false;
-			this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-			// 
 			// MaDia
 			// 
 			this.MaDia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -345,6 +333,18 @@
 			this.Khuyenmai.HeaderText = "Khuyến Mãi";
 			this.Khuyenmai.Name = "Khuyenmai";
 			// 
+			// btnXoa
+			// 
+			this.btnXoa.BackColor = System.Drawing.SystemColors.Control;
+			this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnXoa.Location = new System.Drawing.Point(199, 403);
+			this.btnXoa.Name = "btnXoa";
+			this.btnXoa.Size = new System.Drawing.Size(73, 41);
+			this.btnXoa.TabIndex = 9;
+			this.btnXoa.Text = "Xóa";
+			this.btnXoa.UseVisualStyleBackColor = false;
+			this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+			// 
 			// formNhapDia
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -360,6 +360,7 @@
 			this.Controls.Add(this.dgvKHACHHANG);
 			this.Controls.Add(this.btnXoa);
 			this.Name = "formNhapDia";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Nhập Thông Tin Đĩa";
 			this.panel.ResumeLayout(false);
 			this.panel.PerformLayout();

@@ -29,16 +29,16 @@
 		private void InitializeComponent()
 		{
 			this.dgv = new System.Windows.Forms.DataGridView();
-			this.btnTim = new System.Windows.Forms.Button();
-			this.txttim = new System.Windows.Forms.TextBox();
-			this.btnTrove = new System.Windows.Forms.Button();
-			this.label1 = new System.Windows.Forms.Label();
 			this.MaD = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.TuaDia = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.NSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.KhuyenMai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.btnTim = new System.Windows.Forms.Button();
+			this.txttim = new System.Windows.Forms.TextBox();
+			this.btnTrove = new System.Windows.Forms.Button();
+			this.label1 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -58,6 +58,48 @@
 			this.dgv.RowTemplate.Height = 24;
 			this.dgv.Size = new System.Drawing.Size(667, 193);
 			this.dgv.TabIndex = 24;
+			// 
+			// MaD
+			// 
+			this.MaD.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.MaD.DataPropertyName = "MaD";
+			this.MaD.HeaderText = "Mã Đĩa";
+			this.MaD.Name = "MaD";
+			// 
+			// TuaDia
+			// 
+			this.TuaDia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.TuaDia.DataPropertyName = "TuaDia";
+			this.TuaDia.HeaderText = "Tựa Đĩa";
+			this.TuaDia.Name = "TuaDia";
+			// 
+			// NSX
+			// 
+			this.NSX.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.NSX.DataPropertyName = "NSX";
+			this.NSX.HeaderText = "Nhà Sản Xuất";
+			this.NSX.Name = "NSX";
+			// 
+			// SoLuong
+			// 
+			this.SoLuong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.SoLuong.DataPropertyName = "SoLuong";
+			this.SoLuong.HeaderText = "Số Lượng";
+			this.SoLuong.Name = "SoLuong";
+			// 
+			// DonGia
+			// 
+			this.DonGia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.DonGia.DataPropertyName = "DonGia";
+			this.DonGia.HeaderText = "Đơn Giá";
+			this.DonGia.Name = "DonGia";
+			// 
+			// KhuyenMai
+			// 
+			this.KhuyenMai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.KhuyenMai.DataPropertyName = "KhuyenMai";
+			this.KhuyenMai.HeaderText = "Khuyến Mãi";
+			this.KhuyenMai.Name = "KhuyenMai";
 			// 
 			// btnTim
 			// 
@@ -102,48 +144,6 @@
 			this.label1.TabIndex = 25;
 			this.label1.Text = "Tìm Kiếm Tựa Đĩa";
 			// 
-			// MaD
-			// 
-			this.MaD.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.MaD.DataPropertyName = "MaD";
-			this.MaD.HeaderText = "Mã Đĩa";
-			this.MaD.Name = "MaD";
-			// 
-			// TuaDia
-			// 
-			this.TuaDia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.TuaDia.DataPropertyName = "TuaDia";
-			this.TuaDia.HeaderText = "Tựa Đĩa";
-			this.TuaDia.Name = "TuaDia";
-			// 
-			// NSX
-			// 
-			this.NSX.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.NSX.DataPropertyName = "NSX";
-			this.NSX.HeaderText = "Nhà Sản Xuất";
-			this.NSX.Name = "NSX";
-			// 
-			// SoLuong
-			// 
-			this.SoLuong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.SoLuong.DataPropertyName = "SoLuong";
-			this.SoLuong.HeaderText = "Số Lượng";
-			this.SoLuong.Name = "SoLuong";
-			// 
-			// DonGia
-			// 
-			this.DonGia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.DonGia.DataPropertyName = "DonGia";
-			this.DonGia.HeaderText = "Đơn Giá";
-			this.DonGia.Name = "DonGia";
-			// 
-			// KhuyenMai
-			// 
-			this.KhuyenMai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.KhuyenMai.DataPropertyName = "KhuyenMai";
-			this.KhuyenMai.HeaderText = "Khuyến Mãi";
-			this.KhuyenMai.Name = "KhuyenMai";
-			// 
 			// formFulltextSearch
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -155,6 +155,7 @@
 			this.Controls.Add(this.btnTrove);
 			this.Controls.Add(this.label1);
 			this.Name = "formFulltextSearch";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Tìm kiếm Thông tin";
 			((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
 			this.ResumeLayout(false);

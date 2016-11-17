@@ -293,6 +293,7 @@
 			this.Controls.Add(this.btnReload);
 			this.Controls.Add(this.dgvKHACHHANG);
 			this.Name = "formKhachHang";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Thông tin Khách Hàng";
 			this.panel.ResumeLayout(false);
 			this.panel.PerformLayout();

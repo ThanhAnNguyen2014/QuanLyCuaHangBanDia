@@ -31,6 +31,10 @@
 			this.btnTrove = new System.Windows.Forms.Button();
 			this.label3 = new System.Windows.Forms.Label();
 			this.dgvcthd = new System.Windows.Forms.DataGridView();
+			this.MaHD1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.MaD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,10 +51,6 @@
 			this.btnOK = new System.Windows.Forms.Button();
 			this.dgvhoadon = new System.Windows.Forms.DataGridView();
 			this.label2 = new System.Windows.Forms.Label();
-			this.MaHD1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.MaD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			((System.ComponentModel.ISupportInitialize)(this.dgvcthd)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvkhachhang)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvhoadon)).BeginInit();
@@ -95,6 +95,34 @@
 			this.dgvcthd.RowTemplate.Height = 24;
 			this.dgvcthd.Size = new System.Drawing.Size(470, 151);
 			this.dgvcthd.TabIndex = 57;
+			// 
+			// MaHD1
+			// 
+			this.MaHD1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.MaHD1.DataPropertyName = "MaHD";
+			this.MaHD1.HeaderText = "Mã Hóa Đơn";
+			this.MaHD1.Name = "MaHD1";
+			// 
+			// MaD
+			// 
+			this.MaD.DataPropertyName = "MaD";
+			this.MaD.HeaderText = "Mã Đĩa";
+			this.MaD.Name = "MaD";
+			// 
+			// SoLuong
+			// 
+			this.SoLuong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.SoLuong.DataPropertyName = "SoLuong";
+			this.SoLuong.HeaderText = "Số Lượng";
+			this.SoLuong.Name = "SoLuong";
+			this.SoLuong.ReadOnly = true;
+			// 
+			// ThanhTien
+			// 
+			this.ThanhTien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.ThanhTien.DataPropertyName = "ThanhTien";
+			this.ThanhTien.HeaderText = "Thành Tiền";
+			this.ThanhTien.Name = "ThanhTien";
 			// 
 			// SDT
 			// 
@@ -251,34 +279,6 @@
 			this.label2.TabIndex = 49;
 			this.label2.Text = "Hóa Đơn:";
 			// 
-			// MaHD1
-			// 
-			this.MaHD1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.MaHD1.DataPropertyName = "MaHD";
-			this.MaHD1.HeaderText = "Mã Hóa Đơn";
-			this.MaHD1.Name = "MaHD1";
-			// 
-			// MaD
-			// 
-			this.MaD.DataPropertyName = "MaD";
-			this.MaD.HeaderText = "Mã Đĩa";
-			this.MaD.Name = "MaD";
-			// 
-			// SoLuong
-			// 
-			this.SoLuong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.SoLuong.DataPropertyName = "SoLuong";
-			this.SoLuong.HeaderText = "Số Lượng";
-			this.SoLuong.Name = "SoLuong";
-			this.SoLuong.ReadOnly = true;
-			// 
-			// ThanhTien
-			// 
-			this.ThanhTien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.ThanhTien.DataPropertyName = "ThanhTien";
-			this.ThanhTien.HeaderText = "Thành Tiền";
-			this.ThanhTien.Name = "ThanhTien";
-			// 
 			// formChiTietHoaDon
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -296,6 +296,7 @@
 			this.Controls.Add(this.dgvhoadon);
 			this.Controls.Add(this.label2);
 			this.Name = "formChiTietHoaDon";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Thông tin chi tiết Hóa Đơn";
 			((System.ComponentModel.ISupportInitialize)(this.dgvcthd)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvkhachhang)).EndInit();

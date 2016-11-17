@@ -345,6 +345,7 @@
 			this.Controls.Add(this.btnThem);
 			this.Controls.Add(this.btnSua);
 			this.Name = "formNhanVien";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Tag = "0";
 			this.Text = "Thông tin Nhân Viên";
 			((System.ComponentModel.ISupportInitialize)(this.dgvKHACHHANG)).EndInit();

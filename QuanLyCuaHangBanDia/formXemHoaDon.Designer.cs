@@ -207,6 +207,7 @@
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.xemloainao);
 			this.Name = "formXemHoaDon";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Xem thôn tin Hóa Đơn";
 			((System.ComponentModel.ISupportInitialize)(this.dgvtinh)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvhoadon)).EndInit();

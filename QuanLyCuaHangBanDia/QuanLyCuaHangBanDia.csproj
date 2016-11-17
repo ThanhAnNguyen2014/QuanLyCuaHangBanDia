@@ -77,12 +77,6 @@
     <Compile Include="formFulltextSearch.Designer.cs">
       <DependentUpon>formFulltextSearch.cs</DependentUpon>
     </Compile>
-    <Compile Include="formGiamDoc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="formGiamDoc.Designer.cs">
-      <DependentUpon>formGiamDoc.cs</DependentUpon>
-    </Compile>
     <Compile Include="formKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,9 +149,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formFulltextSearch.resx">
       <DependentUpon>formFulltextSearch.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formGiamDoc.resx">
-      <DependentUpon>formGiamDoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formKhachHang.resx">
       <DependentUpon>formKhachHang.cs</DependentUpon>

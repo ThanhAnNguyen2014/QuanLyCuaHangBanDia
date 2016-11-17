@@ -496,6 +496,7 @@
 			this.Controls.Add(this.btnxemchitiet);
 			this.Controls.Add(this.label6);
 			this.Name = "formLapHoaDon";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "formLapHoaDon";
 			this.Load += new System.EventHandler(this.FormLoad);
 			this.panel2.ResumeLayout(false);

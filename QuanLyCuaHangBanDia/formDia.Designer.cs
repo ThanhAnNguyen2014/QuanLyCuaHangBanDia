@@ -31,18 +31,18 @@
 			this.btnOK = new System.Windows.Forms.Button();
 			this.btnTrove = new System.Windows.Forms.Button();
 			this.dgvdia = new System.Windows.Forms.DataGridView();
-			this.label5 = new System.Windows.Forms.Label();
-			this.btnShowAll = new System.Windows.Forms.Button();
-			this.dgvhoadon = new System.Windows.Forms.DataGridView();
-			this.xemloainao = new System.Windows.Forms.ComboBox();
-			this.label2 = new System.Windows.Forms.Label();
-			this.MaD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.soluongban = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.MaD1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.TuaDia = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.NSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.label5 = new System.Windows.Forms.Label();
+			this.btnShowAll = new System.Windows.Forms.Button();
+			this.dgvhoadon = new System.Windows.Forms.DataGridView();
+			this.MaD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.soluongban = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.xemloainao = new System.Windows.Forms.ComboBox();
+			this.label2 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.dgvdia)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvhoadon)).BeginInit();
 			this.SuspendLayout();
@@ -88,6 +88,36 @@
 			this.dgvdia.Size = new System.Drawing.Size(561, 259);
 			this.dgvdia.TabIndex = 57;
 			// 
+			// MaD1
+			// 
+			this.MaD1.DataPropertyName = "MaD";
+			this.MaD1.HeaderText = "Mã Đĩa";
+			this.MaD1.Name = "MaD1";
+			// 
+			// TuaDia
+			// 
+			this.TuaDia.DataPropertyName = "TuaDia";
+			this.TuaDia.HeaderText = "Tên Đĩa";
+			this.TuaDia.Name = "TuaDia";
+			// 
+			// NSX
+			// 
+			this.NSX.DataPropertyName = "NSX";
+			this.NSX.HeaderText = "Nhà Sản Xuất";
+			this.NSX.Name = "NSX";
+			// 
+			// SoLuong
+			// 
+			this.SoLuong.DataPropertyName = "SoLuong";
+			this.SoLuong.HeaderText = "Số Lượng Tồn Kho ";
+			this.SoLuong.Name = "SoLuong";
+			// 
+			// DonGia
+			// 
+			this.DonGia.DataPropertyName = "DonGia";
+			this.DonGia.HeaderText = "Đơn Giá";
+			this.DonGia.Name = "DonGia";
+			// 
 			// label5
 			// 
 			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
@@ -126,6 +156,21 @@
 			this.dgvhoadon.TabIndex = 54;
 			this.dgvhoadon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvhoadon_CellClick);
 			// 
+			// MaD
+			// 
+			this.MaD.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.MaD.DataPropertyName = "Mad";
+			this.MaD.HeaderText = "Mã Đĩa";
+			this.MaD.Name = "MaD";
+			// 
+			// soluongban
+			// 
+			this.soluongban.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.soluongban.DataPropertyName = "soluongban";
+			this.soluongban.HeaderText = "Số Lượng Bán Được";
+			this.soluongban.Name = "soluongban";
+			this.soluongban.ReadOnly = true;
+			// 
 			// xemloainao
 			// 
 			this.xemloainao.DisplayMember = "ten";
@@ -147,51 +192,6 @@
 			this.label2.TabIndex = 52;
 			this.label2.Text = "Tháng:";
 			// 
-			// MaD
-			// 
-			this.MaD.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.MaD.DataPropertyName = "Mad";
-			this.MaD.HeaderText = "Mã Đĩa";
-			this.MaD.Name = "MaD";
-			// 
-			// soluongban
-			// 
-			this.soluongban.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.soluongban.DataPropertyName = "soluongban";
-			this.soluongban.HeaderText = "Số Lượng Bán Được";
-			this.soluongban.Name = "soluongban";
-			this.soluongban.ReadOnly = true;
-			// 
-			// MaD1
-			// 
-			this.MaD1.DataPropertyName = "MaD";
-			this.MaD1.HeaderText = "Mã Đĩa";
-			this.MaD1.Name = "MaD1";
-			// 
-			// TuaDia
-			// 
-			this.TuaDia.DataPropertyName = "TuaDia";
-			this.TuaDia.HeaderText = "Tên Đĩa";
-			this.TuaDia.Name = "TuaDia";
-			// 
-			// NSX
-			// 
-			this.NSX.DataPropertyName = "NSX";
-			this.NSX.HeaderText = "Nhà Sản Xuất";
-			this.NSX.Name = "NSX";
-			// 
-			// SoLuong
-			// 
-			this.SoLuong.DataPropertyName = "SoLuong";
-			this.SoLuong.HeaderText = "Số Lượng Tồn Kho ";
-			this.SoLuong.Name = "SoLuong";
-			// 
-			// DonGia
-			// 
-			this.DonGia.DataPropertyName = "DonGia";
-			this.DonGia.HeaderText = "Đơn Giá";
-			this.DonGia.Name = "DonGia";
-			// 
 			// formDia
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -206,6 +206,7 @@
 			this.Controls.Add(this.xemloainao);
 			this.Controls.Add(this.label2);
 			this.Name = "formDia";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Thống Kê Đĩa";
 			((System.ComponentModel.ISupportInitialize)(this.dgvdia)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.dgvhoadon)).EndInit();

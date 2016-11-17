@@ -125,6 +125,7 @@
 			this.Controls.Add(this.dgv);
 			this.Controls.Add(this.txttim);
 			this.Name = "formTimHoaDon";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Tìm kiếm hóa đơn";
 			((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
 			this.ResumeLayout(false);

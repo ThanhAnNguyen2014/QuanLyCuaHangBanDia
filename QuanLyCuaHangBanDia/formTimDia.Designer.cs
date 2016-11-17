@@ -143,6 +143,7 @@
 			this.Controls.Add(this.btnTrove);
 			this.Controls.Add(this.label1);
 			this.Name = "formTimDia";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Tìm kiếm Theo Tên Đĩa";
 			((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
 			this.ResumeLayout(false);

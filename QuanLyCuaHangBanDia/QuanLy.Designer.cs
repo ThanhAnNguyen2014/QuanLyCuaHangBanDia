@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.txtDiaChi = new System.Windows.Forms.TextBox();
 			this.txtNgaySinh = new System.Windows.Forms.DateTimePicker();
 			this.label1 = new System.Windows.Forms.Label();
@@ -220,8 +220,8 @@
 			// 
 			this.NgaySinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
 			this.NgaySinh.DataPropertyName = "NgaySinh";
-			dataGridViewCellStyle2.NullValue = null;
-			this.NgaySinh.DefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle1.NullValue = null;
+			this.NgaySinh.DefaultCellStyle = dataGridViewCellStyle1;
 			this.NgaySinh.HeaderText = "Ngày Sinh";
 			this.NgaySinh.Name = "NgaySinh";
 			this.NgaySinh.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -338,6 +338,7 @@
 			this.Controls.Add(this.btnThem);
 			this.Controls.Add(this.btnHuy);
 			this.Name = "QuanLy";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Thông tin Quản Lý";
 			((System.ComponentModel.ISupportInitialize)(this.dgvKHACHHANG)).EndInit();
 			this.panel.ResumeLayout(false);
