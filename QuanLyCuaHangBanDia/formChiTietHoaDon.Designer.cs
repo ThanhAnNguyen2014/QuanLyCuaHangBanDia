@@ -67,6 +67,7 @@
 			this.btnTrove.TabIndex = 4;
 			this.btnTrove.Text = "Trở Về";
 			this.btnTrove.UseVisualStyleBackColor = false;
+			this.btnTrove.Click += new System.EventHandler(this.btnTrove_Click);
 			// 
 			// label3
 			// 
@@ -211,6 +212,7 @@
 			this.btnShowAll.TabIndex = 3;
 			this.btnShowAll.Text = "&Show All";
 			this.btnShowAll.UseVisualStyleBackColor = false;
+			this.btnShowAll.Click += new System.EventHandler(this.btnShowAll_Click);
 			// 
 			// btnOK
 			// 
@@ -222,6 +224,7 @@
 			this.btnOK.TabIndex = 2;
 			this.btnOK.Text = "&OK";
 			this.btnOK.UseVisualStyleBackColor = false;
+			this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
 			// 
 			// dgvhoadon
 			// 

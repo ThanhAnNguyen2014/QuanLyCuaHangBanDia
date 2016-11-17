@@ -16,7 +16,7 @@ namespace QuanLyCuaHangBanDia
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new formLapHoaDon());
+			Application.Run(new formChiTietHoaDon());
 		}
 	}
 }
