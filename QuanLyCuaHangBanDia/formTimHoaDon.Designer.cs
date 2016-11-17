@@ -47,9 +47,10 @@
 			this.btnTrove.Location = new System.Drawing.Point(179, 249);
 			this.btnTrove.Name = "btnTrove";
 			this.btnTrove.Size = new System.Drawing.Size(105, 40);
-			this.btnTrove.TabIndex = 25;
+			this.btnTrove.TabIndex = 2;
 			this.btnTrove.Text = "Trở Về";
 			this.btnTrove.UseVisualStyleBackColor = false;
+			this.btnTrove.Click += new System.EventHandler(this.btnTrove_Click);
 			// 
 			// label1
 			// 
@@ -111,7 +112,8 @@
 			this.txttim.Margin = new System.Windows.Forms.Padding(2);
 			this.txttim.Name = "txttim";
 			this.txttim.Size = new System.Drawing.Size(188, 20);
-			this.txttim.TabIndex = 22;
+			this.txttim.TabIndex = 1;
+			this.txttim.TextChanged += new System.EventHandler(this.txttim_TextChanged);
 			// 
 			// formTimHoaDon
 			// 

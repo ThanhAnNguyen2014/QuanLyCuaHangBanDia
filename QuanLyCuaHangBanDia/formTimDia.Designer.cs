@@ -29,10 +29,9 @@
 		private void InitializeComponent()
 		{
 			this.dgv = new System.Windows.Forms.DataGridView();
-			this.MaS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.TuaSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.TacGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.NXB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.MaD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.TuaDia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.NSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.KhuyenMai = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,10 +45,9 @@
 			// 
 			this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaS,
-            this.TuaSach,
-            this.TacGia,
-            this.NXB,
+            this.MaD,
+            this.TuaDia,
+            this.NSX,
             this.SoLuong,
             this.DonGia,
             this.KhuyenMai});
@@ -60,33 +58,26 @@
 			this.dgv.Size = new System.Drawing.Size(667, 193);
 			this.dgv.TabIndex = 19;
 			// 
-			// MaS
+			// MaD
 			// 
-			this.MaS.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.MaS.DataPropertyName = "MaS";
-			this.MaS.HeaderText = "Mã Sách";
-			this.MaS.Name = "MaS";
+			this.MaD.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.MaD.DataPropertyName = "MaD";
+			this.MaD.HeaderText = "Mã Đĩa";
+			this.MaD.Name = "MaD";
 			// 
-			// TuaSach
+			// TuaDia
 			// 
-			this.TuaSach.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.TuaSach.DataPropertyName = "TuaSach";
-			this.TuaSach.HeaderText = "Tựa Sách";
-			this.TuaSach.Name = "TuaSach";
+			this.TuaDia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.TuaDia.DataPropertyName = "TuaDia";
+			this.TuaDia.HeaderText = "Tựa Đĩa";
+			this.TuaDia.Name = "TuaDia";
 			// 
-			// TacGia
+			// NSX
 			// 
-			this.TacGia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.TacGia.DataPropertyName = "TacGia";
-			this.TacGia.HeaderText = "Tác Giả";
-			this.TacGia.Name = "TacGia";
-			// 
-			// NXB
-			// 
-			this.NXB.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.NXB.DataPropertyName = "NXB";
-			this.NXB.HeaderText = "Nhà Xuất Bản";
-			this.NXB.Name = "NXB";
+			this.NSX.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+			this.NSX.DataPropertyName = "NSX";
+			this.NSX.HeaderText = "Nhà Sản Xuất";
+			this.NSX.Name = "NSX";
 			// 
 			// SoLuong
 			// 
@@ -115,7 +106,8 @@
 			this.txttim.Margin = new System.Windows.Forms.Padding(2);
 			this.txttim.Name = "txttim";
 			this.txttim.Size = new System.Drawing.Size(191, 20);
-			this.txttim.TabIndex = 18;
+			this.txttim.TabIndex = 1;
+			this.txttim.TextChanged += new System.EventHandler(this.chagne);
 			// 
 			// btnTrove
 			// 
@@ -125,9 +117,10 @@
 			this.btnTrove.Location = new System.Drawing.Point(284, 240);
 			this.btnTrove.Name = "btnTrove";
 			this.btnTrove.Size = new System.Drawing.Size(94, 40);
-			this.btnTrove.TabIndex = 21;
+			this.btnTrove.TabIndex = 2;
 			this.btnTrove.Text = "Trở Về";
 			this.btnTrove.UseVisualStyleBackColor = false;
+			this.btnTrove.Click += new System.EventHandler(this.btnTrove_Click);
 			// 
 			// label1
 			// 
@@ -160,15 +153,14 @@
 		#endregion
 
 		private System.Windows.Forms.DataGridView dgv;
-		private System.Windows.Forms.DataGridViewTextBoxColumn MaS;
-		private System.Windows.Forms.DataGridViewTextBoxColumn TuaSach;
-		private System.Windows.Forms.DataGridViewTextBoxColumn TacGia;
-		private System.Windows.Forms.DataGridViewTextBoxColumn NXB;
-		private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
-		private System.Windows.Forms.DataGridViewTextBoxColumn DonGia;
-		private System.Windows.Forms.DataGridViewTextBoxColumn KhuyenMai;
 		private System.Windows.Forms.TextBox txttim;
 		private System.Windows.Forms.Button btnTrove;
 		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.DataGridViewTextBoxColumn MaD;
+		private System.Windows.Forms.DataGridViewTextBoxColumn TuaDia;
+		private System.Windows.Forms.DataGridViewTextBoxColumn NSX;
+		private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
+		private System.Windows.Forms.DataGridViewTextBoxColumn DonGia;
+		private System.Windows.Forms.DataGridViewTextBoxColumn KhuyenMai;
 	}
 }
