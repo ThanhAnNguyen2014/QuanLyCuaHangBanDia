@@ -131,7 +131,7 @@
 			this.label5.ForeColor = System.Drawing.Color.Blue;
 			this.label5.Location = new System.Drawing.Point(12, 38);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(158, 25);
+			this.label5.Size = new System.Drawing.Size(153, 25);
 			this.label5.TabIndex = 56;
 			this.label5.Text = "Danh Sách:";
 			this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

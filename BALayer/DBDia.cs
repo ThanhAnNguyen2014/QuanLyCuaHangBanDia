@@ -38,10 +38,10 @@ namespace BALayer
 			return db.MyExecuteNonQuery("SpXoaDia",
 				CommandType.StoredProcedure, ref err, new SqlParameter("@MaD", MaD));
 		}
-		public bool CapNhatS(ref string err, string MaD, string TuaDia,
+		public bool CapNhatD(ref string err, string MaD, string TuaDia,
 		string NSX, int SoLuong, Int32 DonGia, float KhuyenMai)
 		{
-			return db.MyExecuteNonQuery("SpCapNhatSach",
+			return db.MyExecuteNonQuery("SpCapNhatDia",
 				CommandType.StoredProcedure, ref err,
 				new SqlParameter("@MaD", MaD),
 				new SqlParameter("@TuaDia", TuaDia),
