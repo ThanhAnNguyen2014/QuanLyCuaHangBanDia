@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BALayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,47 @@ namespace QuanLyCuaHangBanDia
 {
 	public partial class Form1 : Form
 	{
+		DBKTTaiKhoan kttk;
 		public Form1()
 		{
 			InitializeComponent();
+			kttk = new DBKTTaiKhoan();
+			form_load();
+		}
+		void frmLogin()
+		{
+			Form frm = new Login();
+			frm.ShowDialog();
+		}
+		private void form_load()
+		{
+			frmLogin();
+			if (Login.nhom == "director")
+			{
+				dangNhapToolStripMenuItem.Enabled = false;
+				thongbao.Text = "Giám Đốc: " + Login.ten;
+			}
+			if (Login.nhom == "manager")
+			{
+				dangNhapToolStripMenuItem.Enabled = false;
+				quanLiToolStripMenuItem.Enabled = false;
+				lapHD.Enabled = false;
+				thongbao.Text = "Quản Lý: " + Login.ten;
+			}
+			else if (Login.nhom == "staff")
+			{
+				dangNhapToolStripMenuItem.Enabled = false;
+				quanLyNhanSuToolStripMenuItem.Enabled = false;
+				nhapDiaToolStripMenuItem.Enabled = false;
+				khachHangToolStripMenuItem.Enabled = false;
+				doanhThuToolStripMenuItem.Enabled = false;
+				danhMụcHóaĐơnToolStripMenuItem1.Enabled = false;
+				thongbao.Text = "Nhân Viên: " + Login.ten;
+
+			}
+
+
+
 		}
 		void frmNhanvien()
 		{
@@ -120,6 +159,29 @@ namespace QuanLyCuaHangBanDia
 		private void tToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			frmFulltextSearch();
+		}
+
+		private void dangxuatToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			string err = "";
+			bool f = kttk.CapNhatTK(ref err, Program.username, "0");
+
+			DialogResult traloi;
+			traloi = MessageBox.Show("Bạn có muốn đăng xuất?", "Trả lời",
+			MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+			if (traloi == DialogResult.OK)
+				Application.Restart();
+		}
+
+		private void thoatToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			string err = "";
+			bool f = kttk.CapNhatTK(ref err, Program.username, "0");
+			DialogResult traloi;
+			traloi = MessageBox.Show("Chắc không?", "Trả lời",
+			MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+			if (traloi == DialogResult.OK)
+				Application.Exit();
 		}
 	}
 }

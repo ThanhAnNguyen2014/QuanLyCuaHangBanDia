@@ -57,6 +57,7 @@
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
+			this.thongbao = new System.Windows.Forms.Label();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -89,20 +90,22 @@
 			// dangNhapToolStripMenuItem
 			// 
 			this.dangNhapToolStripMenuItem.Name = "dangNhapToolStripMenuItem";
-			this.dangNhapToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+			this.dangNhapToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.dangNhapToolStripMenuItem.Text = "Đăng Nhập";
 			// 
 			// dangxuatToolStripMenuItem
 			// 
 			this.dangxuatToolStripMenuItem.Name = "dangxuatToolStripMenuItem";
-			this.dangxuatToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+			this.dangxuatToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.dangxuatToolStripMenuItem.Text = "Đăng Xuất";
+			this.dangxuatToolStripMenuItem.Click += new System.EventHandler(this.dangxuatToolStripMenuItem_Click);
 			// 
 			// thoatToolStripMenuItem
 			// 
 			this.thoatToolStripMenuItem.Name = "thoatToolStripMenuItem";
-			this.thoatToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+			this.thoatToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.thoatToolStripMenuItem.Text = "Thoát";
+			this.thoatToolStripMenuItem.Click += new System.EventHandler(this.thoatToolStripMenuItem_Click);
 			// 
 			// quanLyNhanSuToolStripMenuItem
 			// 
@@ -308,11 +311,23 @@
 			this.label1.TabIndex = 15;
 			this.label1.Text = "Đồ Án Môn Học DBMS";
 			// 
+			// thongbao
+			// 
+			this.thongbao.AutoSize = true;
+			this.thongbao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.thongbao.Location = new System.Drawing.Point(499, 358);
+			this.thongbao.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+			this.thongbao.Name = "thongbao";
+			this.thongbao.Size = new System.Drawing.Size(91, 20);
+			this.thongbao.TabIndex = 23;
+			this.thongbao.Text = "Thông Báo:";
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(831, 387);
+			this.Controls.Add(this.thongbao);
 			this.Controls.Add(this.label8);
 			this.Controls.Add(this.label7);
 			this.Controls.Add(this.label6);
@@ -363,6 +378,7 @@
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Label thongbao;
 	}
 }
 
