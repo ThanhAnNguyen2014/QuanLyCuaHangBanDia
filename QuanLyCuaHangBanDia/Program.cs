@@ -28,7 +28,7 @@ namespace QuanLyCuaHangBanDia
 		public static String servername = ".";
 		public static String username;
 		public static String password;
-		public static String database = "PMQuanLySach";
+		public static String database = "QLCuaHangDia";
 		public static String mlogin;
 		public static String mgroup;
 		public static String mten;
@@ -40,7 +40,7 @@ namespace QuanLyCuaHangBanDia
 			sqlcmd.Connection = Program.conn;
 			sqlcmd.CommandText = cmd;
 			sqlcmd.CommandType = CommandType.Text;
-			sqlcmd.CommandTimeout = 300;
+			sqlcmd.CommandTimeout = 3000;
 			if (Program.conn.State == ConnectionState.Closed)
 				Program.conn.Open();
 			try

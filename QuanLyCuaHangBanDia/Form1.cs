@@ -45,9 +45,10 @@ namespace QuanLyCuaHangBanDia
 				dangNhapToolStripMenuItem.Enabled = false;
 				quanLyNhanSuToolStripMenuItem.Enabled = false;
 				nhapDiaToolStripMenuItem.Enabled = false;
-				khachHangToolStripMenuItem.Enabled = false;
+				khachHangToolStripMenuItem.Enabled = true;
 				doanhThuToolStripMenuItem.Enabled = false;
 				danhMụcHóaĐơnToolStripMenuItem1.Enabled = false;
+				quanlisdiaToolStripMenuItem.Enabled = false;
 				thongbao.Text = "Nhân Viên: " + Login.ten;
 
 			}

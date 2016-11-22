@@ -14,7 +14,7 @@ namespace QuanLyCuaHangBanDia
 {
 	public partial class Login : Form
 	{
-		string strConnectionString = "Data Source=.;Initial Catalog=PMQuanLySach;Integrated Security=True";
+		string strConnectionString = "Data Source=.;Initial Catalog=QLCuaHangDia;Integrated Security=True";
 		SqlConnection con = null;
 		SqlCommand com;
 		public static string nhom;
@@ -129,8 +129,6 @@ namespace QuanLyCuaHangBanDia
 				Program.conn.Close();
 				return;
 			}
-
-
 			Program.myReader.Close();
 			strlenh = "select TrangThai from CapNhatTaiKhoan where TenLogin ='" + Program.username + "'";
 			Program.myReader = Program.ExecSqlDataReader(strlenh, Program.connstr);
