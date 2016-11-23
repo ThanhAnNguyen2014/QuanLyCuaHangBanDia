@@ -10,7 +10,7 @@ namespace DBLayer
 {
     public class DAL
     {
-		string ConnStr= "Data Source=(local);Initial Catalog=QLCuaHangDia;Integrated Security=True";
+		string ConnStr= "Data Source=192.168.1.2;Initial Catalog=QLCuaHangDia;User ID=sa;Password=123";
 
 		SqlConnection conn = null;
 		SqlCommand comm = null;

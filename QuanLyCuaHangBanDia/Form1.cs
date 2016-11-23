@@ -20,14 +20,14 @@ namespace QuanLyCuaHangBanDia
 			kttk = new DBKTTaiKhoan();
 			form_load();
 		}
-		void frmLogin()
-		{
-			Form frm = new Login();
-			frm.ShowDialog();
-		}
+		//void frmLogin()
+		//{
+		//	Form frm = new Login();
+		//	frm.ShowDialog();
+		//}
 		private void form_load()
 		{
-			frmLogin();
+			//frmLogin();
 			if (Login.nhom == "director")
 			{
 				dangNhapToolStripMenuItem.Enabled = false;
@@ -165,7 +165,7 @@ namespace QuanLyCuaHangBanDia
 		private void dangxuatToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			string err = "";
-			bool f = kttk.CapNhatTK(ref err, Program.username, "0");
+			bool f = kttk.CapNhatTK(ref err, Login.username, "0");
 
 			DialogResult traloi;
 			traloi = MessageBox.Show("Bạn có muốn đăng xuất?", "Trả lời",
@@ -177,7 +177,7 @@ namespace QuanLyCuaHangBanDia
 		private void thoatToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			string err = "";
-			bool f = kttk.CapNhatTK(ref err, Program.username, "0");
+			bool f = kttk.CapNhatTK(ref err, Login.username, "0");
 			DialogResult traloi;
 			traloi = MessageBox.Show("Chắc không?", "Trả lời",
 			MessageBoxButtons.OKCancel, MessageBoxIcon.Question);

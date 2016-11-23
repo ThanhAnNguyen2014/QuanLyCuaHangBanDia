@@ -13,7 +13,7 @@ namespace QuanLyCuaHangBanDia
 {
 	public partial class formChiTietHoaDon : Form
 	{
-		string strConnectionString = "Data Source=.;Initial Catalog=QLCuaHangDia;Integrated Security=True";
+		string strConnectionString = "Data Source=192.168.1.2;Initial Catalog=QLCuaHangDia;User ID=sa;Password=123";
 
 		SqlConnection conn = null;
 
